@@ -9,24 +9,47 @@
 <body>
    <nav>
     <div class="main-nav container flex">
-      <a href="" class="company-logo">
-        <img src="logo" alt="logo Image">
+      <a href="./index.html" class="company-logo">
+        <img src="./logo.jpg" alt="logo Image" height="60px">
       </a>
        <div class="nav-links">
         <ul class="flex">
-            <li class="hover-link nav-item " >Cricket</li>
-            <li class="hover-link nav-item">India</li>
-            <li class="hover-link nav-item">Technology</li>
-            <li class="hover-link nav-item">Politics</li>
+            <li class="hover-link nav-item " id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+            <li class="hover-link nav-item" id="india" onclick="onNavItemClick('india')">India</li>
+            <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+            <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
         </ul>
        </div>
        <div class="search-bar flex">
-        <input type="text" class="news-input" placeholder="Search">
-        <button class="search-button">Search</button>
+        <input type="text" class="news-input" id="search-text" placeholder="Search">
+        <button class="search-button" id="search-button">Search</button>
        </div>
 
     </div>
    </nav>
+   <main>
+    <div class="cards-container container flex" id="cardscontainer">
+       
+    </div>
+   </main>
+
+
+   <template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="" alt="card image" id="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title" >This is the Title</h3>
+            <h6 class="news-source" id="news-source">Const genuin 23-11-2024</h6>
+            <p class="news-desc" id="news-desc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, veniam modi? Pariatur, impedit ipsa esse sint eos ut consequuntur et non ratione reiciendis praesentium iste sunt omnis, optio facilis deleniti.
+            Atque doloremque distinctio inventore, beatae id molestias architecto. Odio, aliquid! Ad explicabo assumenda dolores, culpa delectus odio, possimus quia earum voluptatem qui, hic quisquam autem laborum debitis reprehenderit? Ducimus, iste?</p>
+        </div>
+    </div>
+   </template>
+
+
+
 </body>
 <script src="./script.js"></script>
 </html>
