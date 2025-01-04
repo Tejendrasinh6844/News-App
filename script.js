@@ -19,12 +19,12 @@ const bindData = (articles)=>{
  const cardsContainer = document.getElementById("cardscontainer")
  const newsCardTemplate = document.getElementById("template-news-card")
 
- cardsContainer.innerHTML = "";
+ cardsContainer.innerHTML = ""
 
  articles.forEach(article => {
   
   
-    if(!article.urlToImage) return;
+    if(!article.urlToImage) return
 
     const cardClone = newsCardTemplate.content.cloneNode(true)
     fillDataInCard(cardClone,article)
